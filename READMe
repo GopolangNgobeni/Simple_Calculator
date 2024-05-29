@@ -1,28 +1,41 @@
-# Simple Calculator
+# Python Calculator
 
-Perform calculations  using this Simple Calculator built in Python with tkinter.
+This Python calculator is a command-line tool that allows users to perform basic arithmetic operations as well as some advanced mathematical functions.
 
 ## Features
 
-- Basic arithmetic operations: addition, subtraction, multiplication, division.
-- Square root calculation.
-- Exponentiation.
-- Trigonometric functions: sine, cosine, tangent.
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Exponentiation
+- Square Root
+- Trigonometric functions (Sine, Cosine, Tangent)
 
 ## Getting Started
 
-1. **Installation**: No installation required. Simply download or clone the repository.
+1. **Installation**: No installation is required. Simply download or clone the repository to your local machine.
 
 2. **Usage**:
-   - Run the script (`Simple_Calculator.py`) using Python.
-   - Enter numbers and select operations using the buttons provided.
-   - Press "=" to get the result.
-   - Use "C" to clear the input.
-3. **Notes**:
-   - Ensure you have Python installed on your system.
-   - Trigonometric functions expect angles to be entered in degrees.
+   - Open a terminal or command prompt.
+   - Navigate to the directory where the calculator script (`Simple_Calculator.py`) is located.
+   - Run the script by executing the command: `python Simple_Calculator.py`.
+   - Follow the on-screen prompts to perform calculations.
 
-## Example
+3. **Instructions**:
+   - When prompted, enter the number corresponding to the operation you want to perform.
+   - For basic arithmetic operations (addition, subtraction, multiplication, division, exponentiation), enter two numbers when prompted.
+   - For square root, enter a single number when prompted.
+   - For trigonometric functions (sine, cosine, tangent), enter an angle in degrees when prompted.
 
-```python
-python Simple_Calculator.py
+4. **Exiting**: To exit the calculator, simply choose the "Quit" option from the menu.
+
+
+
+## Notes
+
+- The calculator uses floating-point numbers for calculations to handle both integer and decimal inputs.
+- Trigonometric functions expect angles to be entered in degrees.
+
+Feel free to explore and use this calculator for your mathematical computations!
+

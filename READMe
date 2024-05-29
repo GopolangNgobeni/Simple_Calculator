@@ -1,0 +1,28 @@
+# Simple Calculator
+
+Perform calculations  using this Simple Calculator built in Python with tkinter.
+
+## Features
+
+- Basic arithmetic operations: addition, subtraction, multiplication, division.
+- Square root calculation.
+- Exponentiation.
+- Trigonometric functions: sine, cosine, tangent.
+
+## Getting Started
+
+1. **Installation**: No installation required. Simply download or clone the repository.
+
+2. **Usage**:
+   - Run the script (`Simple_Calculator.py`) using Python.
+   - Enter numbers and select operations using the buttons provided.
+   - Press "=" to get the result.
+   - Use "C" to clear the input.
+3. **Notes**:
+   - Ensure you have Python installed on your system.
+   - Trigonometric functions expect angles to be entered in degrees.
+
+## Example
+
+```python
+python Simple_Calculator.py

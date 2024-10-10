@@ -1,41 +1,110 @@
-# Python Calculator
+Simple Calculator
 
-This Python calculator is a command-line tool that allows users to perform basic arithmetic operations as well as some advanced mathematical functions.
+This is a Python-based graphical user interface (GUI) calculator that performs basic arithmetic operations, trigonometric calculations, exponentiation, and includes the mathematical constant π (pi). Built using the tkinter library, the calculator provides a user-friendly interface for mathematical computations.
 
-## Features
+Features
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Exponentiation
-- Square Root
-- Trigonometric functions (Sine, Cosine, Tangent)
+Basic Arithmetic Operations: Addition, Subtraction, Multiplication, and Division.
+Advanced Functions: Square Root, Sine, Cosine, Tangent.
+Exponentiation: Calculate powers using the format base ^ exponent.
+π (Pi) Support: Easily insert the value of π in calculations.
+Error Handling: Displays "Error" message for invalid inputs.
+Requirements
+Python 3.x
+Tkinter library (usually included with Python)
+Installation
+Clone the repository or download the source code.
 
-## Getting Started
+bash
+Copy code
+git clone git@github.com:GopolangNgobeni/Simple_Calculator.git
+cd Simple_calculator
+Make sure you have Python installed. You can download it from python.org.
 
-1. **Installation**: No installation is required. Simply download or clone the repository to your local machine.
+Run the calculator script.
 
-2. **Usage**:
-   - Open a terminal or command prompt.
-   - Navigate to the directory where the calculator script (`Simple_Calculator.py`) is located.
-   - Run the script by executing the command: `python Simple_Calculator.py`.
-   - Follow the on-screen prompts to perform calculations.
+bash
+Copy code
+python Simple_calculator.py
 
-3. **Instructions**:
-   - When prompted, enter the number corresponding to the operation you want to perform.
-   - For basic arithmetic operations (addition, subtraction, multiplication, division, exponentiation), enter two numbers when prompted.
-   - For square root, enter a single number when prompted.
-   - For trigonometric functions (sine, cosine, tangent), enter an angle in degrees when prompted.
+Usage
+Launch the application.
+Enter numbers and select operations using the calculator interface.
+Use the = button to evaluate expressions.
+Press AC to clear the input field.
+For exponentiation, input in the format base ^ exponent (e.g., 2 ^ 3 for 
+2
+3
+2 
+3
+ ).
+Use the π button to insert the value of π into calculations.
+Example Calculations
+Basic Arithmetic
+Addition:
 
-4. **Exiting**: To exit the calculator, simply choose the "Quit" option from the menu.
+Input: 5 + 3
+Output: 8
+Subtraction:
+
+Input: 10 - 4
+Output: 6
+Multiplication:
+
+Input: 7 * 6
+Output: 42
+Division:
+
+Input: 20 / 5
+Output: 4.0
+Trigonometric Functions
+Sine:
+
+Input: 30 then sin
+Output: 0.5 (Note: Input is in degrees)
+Cosine:
+
+Input: 0 then cos
+Output: 1.0
+Tangent:
+
+Input: 45 then tan
+Output: 1.0
+Square Root
+Square Root:
+Input: 16 then √
+Output: 4
+Exponentiation
+Power:
+Input: 3 ^ 2
+
+Output: 9
+
+Input: 2 ^ 3
+
+Output: 8
+
+Pi (π) Usage
+Using Pi (π):
+Input: π then * 2
+Output: 6.283185307179586 (This is 
+2
+𝜋
+2π)
+
+Combination of Operations
+Complex Expression:
+Input: 5 + 3 * 2 - 8 / 4
+Output: 9
 
 
 
-## Notes
 
-- The calculator uses floating-point numbers for calculations to handle both integer and decimal inputs.
-- Trigonometric functions expect angles to be entered in degrees.
 
-Feel free to explore and use this calculator for your mathematical computations!
+
+
+
+
+
+
 

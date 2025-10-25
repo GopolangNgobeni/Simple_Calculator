@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <input style="text" id="inputBox" value="0"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="digitButton" onclick="digitBtnPressed(7)">7</td>
+                <td class="digitButton" onclick="digitBtnPressed(8)">8</td>
+                <td class="digitButton" onclick="digitBtnPressed(9)">9</td>
+                <td class="operatorButton" onclick="operatorBtnPressed('x')">x</td>
+            </tr>
+            <tr>
+                <td class="digitButton" onclick="digitBtnPressed(4)">4</td>
+                <td class="digitButton" onclick="digitBtnPressed(5)">5</td>
+                <td class="digitButton" onclick="digitBtnPressed(6)">6</td>
+                <td class="operatorButton" onclick="operatorBtnPressed('-')">-</td>
+            </tr>
+             <tr>
+                <td class="digitButton" onclick="digitBtnPressed(1)">1</td>
+                <td class="digitButton" onclick="digitBtnPressed(2)">2</td>
+                <td class="digitButton" onclick="digitBtnPressed(3)">3</td>
+                <td class="operatorButton" onclick="operatorBtnPressed('+')">+</td>
+            </tr>
+            <tr>
+                <td class="digitButton" colspan="2"  onclick="digitBtnPressed(0)">0</td>
+                <td class=acButton onclick="btnAcPressed()">AC</td>
+                <td class="operatorButton" onclick="operatorBtnPressed('/')">/</td>
+            </tr>
+            <tr>
+                <td colspan="4" onclick="equalsBtnPressed()">=</td>
+            </tr>
+        
+        </table>
+        
+        <script>
+            
+            var value1;
+            var currentOperator;
+            var currentExpression = "";
+            var newLine = true;
+            
+            function digitBtnPressed(button){
+                
+               if(newLine && document.getElementById("inputBox").value == "0"){
+                    currentExpression = button.toString();
+                    newLine = false;
+                } else {
+                    currentExpression += button;
+                }
+                document.getElementById("inputBox").value = currentExpression;
+            }
+            
+            function btnAcPressed(){
+                currentExpression = "";
+                document.getElementById("inputBox").value = 0;
+                newLine = true;
+            }
+            
+            function operatorBtnPressed(operator){
+                if(currentExpression === "") return; 
+                currentExpression += operator;
+                currentOperator = operator;
+                newLine = false;
+                document.getElementById("inputBox").value = currentExpression;
+    
+            }
+            
+            function equalsBtnPressed(){
+                try {
+            // replace 'x' with '*' for multiplication
+            var sanitizedExpression = currentExpression.replace(/x/g, "*");
+            var finalTotal = eval(sanitizedExpression);
+            document.getElementById("inputBox").value = finalTotal;
+            currentExpression = finalTotal.toString(); 
+            newLine = true;
+            } catch (e) {
+                document.getElementById("inputBox").value = "Error";
+                currentExpression = "";
+                newLine = true;
+            }
+            }
+        
+        
+        </script>
+    
+    
+    
+    </body>
+</html>
